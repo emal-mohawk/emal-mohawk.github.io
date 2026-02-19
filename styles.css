@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#name {
+    font-size: 8vh;
+}
+#introName{
+    margin: 20vh 10vh;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vh;
+    margin: 2vh 2vh;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2vh 10vh;
+}
