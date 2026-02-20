@@ -1,7 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+}
+body, section {
     background-color: antiquewhite;
+}
+section h1 {
+    background-color: antiquewhite;
+    padding: 5vh 10vh 2vh 10vh;
+    font-size: 4vh;
+}
+#summary {
+    padding: 0 10vh 0 10vh;
 }
 #name {
     font-size: 8vh;
@@ -40,10 +50,99 @@ nav {
     
 }
 #education{
-    margin: 0 10vh;
+    margin: 5vh 10vh;
     border-radius: 2vh;
+    display: flex;
+    gap: 2vh;
+    background-color: white;
+    padding: 2vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
-img {
+#education:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.education-image {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.education-image img {
     border-radius: 2vh;
-    width: 50%;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.education-content {
+    flex: 1;
+    background-color: white;
+    padding: 0 2vh;
+}
+.education-content h4 {
+    background-color: white;
+    margin-bottom: 1vh;
+}
+.education-content p {
+    background-color: white;
+    line-height: 1.6;
+}
+#projects {
+    padding: 5vh 10vh;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3vh;
+    background-color: antiquewhite;
+}
+.project-card {
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.project-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 2vh;
+    overflow: hidden;
+    margin-bottom: 1.5vh;
+    background-color: #f0f0f0;
+}
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+}
+.project-content {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.project-content h3 {
+    background-color: white;
+    margin-bottom: 1vh;
+    font-size: 1.8vh;
+}
+.project-content p {
+    background-color: white;
+    line-height: 1.6;
+    font-size: 1.3vh;
 }
