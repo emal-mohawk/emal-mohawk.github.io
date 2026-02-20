@@ -1,25 +1,49 @@
 *{
     padding: 0;
     margin: 0;
+    background-color: antiquewhite;
 }
 #name {
     font-size: 8vh;
 }
-#introName{
-    margin: 20vh 10vh;
+#intro{
+    padding: 20vh 10vh;
 }
 nav ul li {
     list-style: none;
     display: inline-block;
+
+}
+nav ul{
+    background-color: rgb(229, 198, 157);
 }
 nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.5vh;
-    margin: 2vh 2vh;
+    padding: 1vh 2vh;
+    background-color: rgb(229, 198, 157);
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    color: gray;
 }
 nav {
     display: flex;
     justify-content: flex-end;
-    margin: 2vh 10vh;
+    position: sticky;
+    padding: 3vh 10vh 0vh 0 ;
+    top: 0;
+    background-color: rgb(229, 198, 157);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    
+}
+#education{
+    margin: 0 10vh;
+    border-radius: 2vh;
+}
+img {
+    border-radius: 2vh;
+    width: 50%;
 }
