@@ -7,12 +7,16 @@ body, section {
 }
 section h1 {
     background-color: antiquewhite;
-    padding: 5vh 10vh 2vh 10vh;
+    padding: 5vh 0 2vh 0;
     font-size: 4vh;
 }
 #summary {
     padding: 0 10vh 0 10vh;
 }
+#projects h1 {
+    padding: 5vh 0 4vh 0;
+}
+
 #name {
     font-size: 8vh;
 }
@@ -226,7 +230,7 @@ nav {
 }
 .resume-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2vh;
     margin-bottom: 2vh;
 }
